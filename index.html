@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Mathieu Pluquet</title>
+    <meta name="description" content="Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -19,54 +20,57 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="icone/css/font-awesome.min.css">
-
-    <script src="js/jquery.fullPage.js"></script>
-
-
-</head>
-
-<body>
-    <!--[if lt IE 8]>
+ <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+       <script src="js/jquery.fullPage.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Nothing+You+Could+Do|Walter+Turncoat" rel="stylesheet">     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
     <!-- Add your site or application content here -->
 
     <!-- start of header -->
-<div>
     <header>
 
-
-        <nav class="topnav">
-            <li><a href="">Presentation</a></li>
-            <li><a href="">Projet</a></li>
-            <li><a href="">Contact</a></li>
+        <nav class="topnav slide-in-right">
+            <li><a href="#slide1">Presentation</a></li>
+            <li><a href="#slide3">Projet</a></li>
+            <li><a href="#slide2">Contact</a></li>
         </nav>
 
         <div class="nomprenom">
-            <p class="nom">MATHIEU PLUQUET</p>
-            <p class="age">23 ans</p>
-            <p class="metier">Developpeur web junior</p>
+            <p class="nom slide-in-left">MATHIEU PLUQUET</p>
+            <p class="age slide-in-left">23 ans</p>
+            <p class="metier slide-in-left">Développeur web junior</p>
         </div>
 
-        <figure>
-            <img src="" alt="">
-        </figure>
     </header>
 
     <!-- end of header -->
+
+    <!-- parallax -->
+
     <div class="container-fluid" id="slide1">
-      <h1>Presentation</h1>
+      <h1>Présentation</h1>
     </div>
 
     <!-- start of presentation  -->
 
     <div class="presentation">
         <div class="blabla">
-            <h1>Presentation</h1>
+          <h2>Parcours</h2>
             <p>Je suis actuellement en formation à "Simplon" depuis mars 2017 pour apprendre le developpement web.</p>
             <p>Je crée des sites vitrines et responsive.</p>
             <p>Lorsque je ne code pas, j'aime passer du temps à jouer aux échecs ou aux jeux vidéo.</p>
+
+          <h2>Compétences</h2>
+
+          <ul class="competence">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Git</li>
+            <li>Github</li>
+            <li>JavaScript</li>
+          </ul>
         </div>
     </div>
 
@@ -75,51 +79,67 @@
     <!-- parallax  -->
 
     <div class="container-fluid" id="slide3">
-        <h1>Projet</h1>
+        <h1>Projets</h1>
     </div>
 
     <!-- start of projet  -->
-
+        <h2 class="nodesktop proj">Projets</h2>
     <div class="projet row container-fluid">
 
 
+        <div class="col-12 row justify-content-around projet1 pad ">
 
-<p>Creation</p>
-        <div class="col-12 row justify-content-around ">
-
-        <div class="col-6 ">
-        <a class="" href="file:///Users/mathieu/projet/s6/le%20bon%20coin/index.html ">
-          <img src="img/airbnb1.jpg" alt="">
+        <div class="col-12 hov col-md-6 ">
+          <h3 class="hidden-md-up">TatooSite</h3>
+        <a class="" href="https://mathieu-pluquet.github.io/site-tattoo/ ">
+          <div class="fig ">
+          <img src="img/tatoo.jpg" alt="site tatoo">
+          <figcaption class="hidden-sm-down"><span><span class="spanstyle">TatooSite</span> <br> Création</span></figcaption>
+          </div>
         </a>
         </div>
-        <div class="col-6 ">
-        <a href="file:///Users/mathieu/projet/s4/projet/airbnb/index.html">
-          <img src="img/airbnb1.jpg" alt="">
+        <div class="col-12 hov col-md-6 ">
+          <h3 class="hidden-md-up">Quiver</h3>
+        <a href="https://ilyesjr.github.io/quiveure/">
+          <div class="fig">
+          <img src="img/quiver.jpg" alt="site quiver">
+            <figcaption class="hidden-sm-down"><span class="span2"><span class="spanstyle">Quiver</span> <br> Reproduction</span></figcaption>
+          </div>
 
         </a>
         </div>
         </div>
-        <p>Reproduction</p>
 
-        <div class="col-12 row justify-content-around ">
-        <div class="col-6 ">
+
+        <div class="col-12 row justify-content-around projet2">
+        <div class="col-12 hov col-md-6">
+            <div class="fig">
+              <h3 class="hidden-md-up">Le bon coin</h3>
         <a href="file:///Users/mathieu/projet/s6/le%20bon%20coin/index.html">
-          <img src="img/airbnb1.jpg" alt="">
+          <img src="img/boncoin.jpg" alt="site du bon coin">
+          <figcaption class="hidden-sm-down"><span><span class="spanstyle">Le bon coin</span> <br> Reproduction</span></figcaption>
+        </div>
         </a>
         </div>
 
-        <div class="col-6">
+        <div class="col-12 hov col-md-6">
+          <div class="fig">
+            <h3 class="hidden-md-up">Air bnb</h3>
         <a href="file:///Users/mathieu/projet/s4/projet/airbnb/index.html">
-            <img src="img/airbnb1.jpg" alt="">
+            <img src="img/airbnb.jpg" alt="site air bnb">
+              <figcaption class="hidden-sm-down"> <span class="span2"><span class="spanstyle">Airbnb</span> <br>Reproduction</span></figcaption>
+              </div>
         </a>
         </div>
         </div>
 
         </div>
-    </div>
   </div>
 
     <!-- end of projet  -->
+
+    <!-- parallax -->
+
     <div class="container-fluid" id="slide2">
       <h1>Contact</h1>
     </div>
@@ -132,7 +152,8 @@
             <div>
                 <p class="p1">Contactez moi pour toutes demandes de projet ou autres</p>
                 <a class="reseau lettre" href=""><i class="fa fa-envelope-o fa" aria-hidden="true"> message</i></a>
-                <p class="p2">Vous pouvez me suivre sur Twitter, regarder mon Github ou m'envoyer un mail</p>
+                <p class="p2">Si vous voulez en savoir plus sur moi,</p>
+                <p>Vous pouvez me suivre sur Twitter, regarder mon Github ou m'envoyer un mail</p>
             </div>
 
             <div class="reseaux">
