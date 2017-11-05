@@ -1,196 +1,298 @@
 <!doctype html>
-<html class="no-js" lang="fr">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mathieu Pluquet</title>
-    <meta name="description" content="Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Mathieu Pluquet</title>
+	<meta name="title" content="jQuery One Page Scroll by Pete R. | The Pete Design" />
+	<meta name="description" content="Create a beautiful 3D tilted effect on scroll with jQuery Tilted Page Scroll plugin by Pete Rojwongsuriya" />
+	<link rel="image_src" href="/images/tiltedpage_scroll_image.png" />
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="icone/css/font-awesome.min.css">
- <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-       <script src="js/jquery.fullPage.js"></script>
- <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Nothing+You+Could+Do|Walter+Turncoat" rel="stylesheet">     <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <!-- Add your site or application content here -->
-
-    <!-- start of header -->
-    <header>
-
-        <nav class="topnav slide-in-right">
-            <li><a href="#slide1">Presentation</a></li>
-            <li><a href="#slide3">Projet</a></li>
-            <li><a href="#slide2">Contact</a></li>
-        </nav>
-
-        <div class="nomprenom">
-            <p class="nom slide-in-left">MATHIEU PLUQUET</p>
-            <p class="age slide-in-left">23 ans</p>
-            <p class="metier slide-in-left">Développeur web junior</p>
-        </div>
-
-    </header>
-
-    <!-- end of header -->
-
-    <!-- parallax -->
-
-    <div class="container-fluid" id="slide1">
-      <h1>Présentation</h1>
-    </div>
-
-    <!-- start of presentation  -->
-
-    <div class="presentation">
-        <div class="blabla">
-          <h2>Parcours</h2>
-            <p>Je suis actuellement en formation à "Simplon" depuis mars 2017 pour apprendre le developpement web.</p>
-            <p>Je crée des sites vitrines et responsive.</p>
-            <p>Lorsque je ne code pas, j'aime passer du temps à jouer aux échecs ou aux jeux vidéo.</p>
-
-          <h2>Compétences</h2>
-
-          <ul class="competence">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Git</li>
-            <li>Github</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-    </div>
-
-    <!-- end of presentation  -->
-
-    <!-- parallax  -->
-
-    <div class="container-fluid" id="slide3">
-        <h1>Projets</h1>
-    </div>
-
-    <!-- start of projet  -->
-        <h2 class="nodesktop proj">Projets</h2>
-    <div class="projet row container-fluid">
+	<meta content="http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/tiltedpage_scroll_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png">
+	<meta name="author" content="Pete R.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="jquery.tiltedpage-scroll.js"></script>
+	<!-- test -->
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="jqscrollanim.js"></script>
+	<link href='css/main.css' rel='stylesheet' type='text/css'>
 
 
-        <div class="col-12 row justify-content-around projet1 pad ">
-
-        <div class="col-12 hov col-md-6 ">
-          <h3 class="hidden-md-up">TatooSite</h3>
-        <a class="" href="https://mathieu-pluquet.github.io/site-tattoo/ ">
-          <div class="fig ">
-          <img src="img/tatoo.jpg" alt="site tatoo">
-          <figcaption class="hidden-sm-down"><span><span class="spanstyle">TatooSite</span> <br> Création</span></figcaption>
-          </div>
-        </a>
-        </div>
-        <div class="col-12 hov col-md-6 ">
-          <h3 class="hidden-md-up">Quiver</h3>
-        <a href="https://ilyesjr.github.io/quiveure/">
-          <div class="fig">
-          <img src="img/quiver.jpg" alt="site quiver">
-            <figcaption class="hidden-sm-down"><span class="span2"><span class="spanstyle">Quiver</span> <br> Reproduction</span></figcaption>
-          </div>
-
-        </a>
-        </div>
-        </div>
 
 
-        <div class="col-12 row justify-content-around projet2">
-        <div class="col-12 hov col-md-6">
-            <div class="fig">
-              <h3 class="hidden-md-up">Le bon coin</h3>
-        <a href="file:///Users/mathieu/projet/s6/le%20bon%20coin/index.html">
-          <img src="img/boncoin.jpg" alt="site du bon coin">
-          <figcaption class="hidden-sm-down"><span><span class="spanstyle">Le bon coin</span> <br> Reproduction</span></figcaption>
-        </div>
-        </a>
-        </div>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Mathieu Pluquet</title>
+	<meta name="description" content="Portfolio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="col-12 hov col-md-6">
-          <div class="fig">
-            <h3 class="hidden-md-up">Air bnb</h3>
-        <a href="file:///Users/mathieu/projet/s4/projet/airbnb/index.html">
-            <img src="img/airbnb.jpg" alt="site air bnb">
-              <figcaption class="hidden-sm-down"> <span class="span2"><span class="spanstyle">Airbnb</span> <br>Reproduction</span></figcaption>
-              </div>
-        </a>
-        </div>
-        </div>
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="icone/css/font-awesome.min.css">
+	<!-- ok -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<script src="js/jquery.fullPage.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Nothing+You+Could+Do|Walter+Turncoat" rel="stylesheet">
 
-        </div>
-  </div>
+	<script>
+		$(document).ready(function() {
+			$(".main").tiltedpage_scroll({
+				angle: 20
+			});
+		});
+	</script>
+	<link rel="stylesheet" href="../css/demo.css">
+	<script src="../js/demo.js"></script>
+</head>
 
-    <!-- end of projet  -->
-
-    <!-- parallax -->
-
-    <div class="container-fluid" id="slide2">
-      <h1>Contact</h1>
-    </div>
-
-    <!-- start of contact  -->
-    <div class="color">
-        <div class="contact">
+<body>
 
 
-            <div>
-                <p class="p1">Contactez moi pour toutes demandes de projet ou autres</p>
-                <a class="reseau lettre" href=""><i class="fa fa-envelope-o fa" aria-hidden="true"> message</i></a>
-                <p class="p2">Si vous voulez en savoir plus sur moi,</p>
-                <p>Vous pouvez me suivre sur Twitter, regarder mon Github ou m'envoyer un mail</p>
-            </div>
-
-            <div class="reseaux">
-                <a class="reseau top" href="">Twitter</a>
-                <a class="reseau" href="">Linkedin</a>
-                <a class="reseau bot" href="">Github</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- end of contact  -->
+	<!-- test -->
 
 
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function() {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = 'https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X', 'auto');
-        ga('send', 'pageview');
-    </script>
+
+	<header>
+
+		<nav class="topnav slide-in-right ">
+			<li><a href="#slide1">Presentation</a></li>
+			<li><a href="#slide3">Projet</a></li>
+			<li><a href="#slide2">Contact</a></li>
+		</nav>
+
+		<div class="nomprenom">
+			<p class="nom slide-in-left">Mathieu PLUQUET</p>
+			<p class="age slide-in-left">23 ans</p>
+			<p class="metier slide-in-left">Developpeur web junior</p>
+		</div>
+
+	</header>
+
+	<!-- end of header -->
+
+
+	<!-- parallax -->
+
+	<div class="container-fluid" id="slide1">
+		<h1>Présentation</h1>
+	</div>
+
+	<!-- start of presentation  -->
+
+	<div class="presentation">
+		<div class="blabla">
+			<h2>Parcours</h2>
+			<p>Je suis actuellement en formation à "Simplon" depuis mars 2017 pour y apprendre le développement web.</p>
+			<p>Je crée des sites vitrines et responsive ainsi que des sites web dynamique sous PHP.</p>
+			<p>Je recherche un stage à partir de janvier 2018 durant 4 à 6 mois.</p>
+			<p>Lorsque je ne code pas, j'aime passer du temps à jouer aux échecs ou aux jeux vidéo.</p>
+
+			<h2>Compétences</h2>
+
+
+			<ul class="competence">
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Git</li>
+				<li>Github</li>
+				<li>JavaScript</li>
+				<li>PHP</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- end of presentation  -->
+
+
+	<!-- parallax  -->
+
+	<div class="container-fluid" id="slide3">
+		<h1>Projets HTML/CSS</h1>
+	</div>
+
+	<!-- start of projet  -->
+	<h2 class="nodesktop proj">Projets</h2>
+	<div class="projet row container-fluid wrapper hihi">
+
+
+				<!-- test -->
+				<script>
+	  $(document).ready(function(){
+       $(".zoom-images").zoomScroller({
+         initZoom: 1.05,
+         animationTime: 1500,
+         onZoom: function(el, zoomType) {
+           if (zoomType == "in") {
+             el.find(".info").fadeIn("slow");
+           } else {
+             el.find(".info").fadeOut("slow");
+           }
+         }
+       });
+		});
+
+	</script>
+
+
+
+				<script>
+					$(document).ready(function() {
+						$(".main").tiltedpage_scroll({
+							angle: 20
+						});
+					});
+				</script>
+				<link rel="stylesheet" href="../css/demo.css">
+				<script src="../js/demo.js"></script>
+
+					<div class="main">
+						<div class="header">
+							<div class="btns">
+							</div>
+						</div>
+						<section class="page1 ">
+							<div class="page_container ">
+								<h1 class="colo"><a href="https://github.com/Mathieu-Pluquet/site-airbnb" target="_blank">airbnb<br><small>Reproduction Html & css</small></a></h1>
+							</div>
+						</section>
+						<section class="page2">
+							<div class="page_container">
+								<h1><a href="https://github.com/Mathieu-Pluquet/site-tattoo" target="_blank">tatoosite<br><small>Création Html & css</small></a></h1>
+							</div>
+						</section>
+						<section class="page3">
+							<div class="page_container">
+								<h1 class="colo"><a href="https://github.com/ilyesjr/quiveure" target="_blank">quiver<br><small>Reproduction Html & css</small></a></h1>
+							</div>
+						</section>
+						<section class="page4">
+							<div class="page_container">
+								<h1><a href="https://github.com/Mathieu-Pluquet/leboncoin" target="_blank">leboncoin<br><small>Reproduction Html & css</small></a></h1>
+							</div>
+						</section>
+					</div>
+
+		</div>
+
+		<!-- end of projet  -->
+
+
+
+	<!-- parallax  -->
+
+	<div class="container-fluid" id="slide4">
+		<h1>Projets JS</h1>
+	</div>
+
+	<!-- start of projet  -->
+	<h2 class="nodesktop proj">Projets</h2>
+	<div class="projet row container-fluid">
+
+
+		<div class="col-12 row justify-content-around projet1 pad ">
+
+			<div class="col-12 hov col-md-6 ">
+				<h3 class="hidden-md-up">Netflix</h3>
+				<a class="" href="https://github.com/Mathieu-Pluquet/Netflixroulette" target="_blank">
+					<div class="fig ">
+						<img src="img/api.jpg" alt="site tatoo">
+						<figcaption class="hidden-sm-down"><span><span class="spanstyle">Netflix</span> <br>Vue.js</span>
+						</figcaption>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 hov col-md-6 ">
+				<h3 class="hidden-md-up">chat</h3>
+				<a href="https://github.com/Mathieu-Pluquet/mini-chat" target="_blank">
+					<div class="fig">
+						<img src="img/chat.jpg" alt="site quiver">
+						<figcaption class="hidden-sm-down"><span class="span2"><span class="spanstyle">Mini-chat</span> <br>jQuery</span>
+						</figcaption>
+					</div>
+
+				</a>
+			</div>
+		</div>
+
+
+		<div class="col-12 row justify-content-around projet2">
+			<div class="col-12 hov col-md-6">
+				<div class="fig">
+					<h3 class="hidden-md-up">Pomodoro</h3>
+					<a href="https://github.com/Mathieu-Pluquet/pomodoro" target="_blank">
+					<img src="img/pomodoro.jpg" alt="site du bon coin">
+					<figcaption class="hidden-sm-down"><span><span class="spanstyle">Pomodoro</span> <br> JavaScript</span></figcaption>
+				</div>
+				</a>
+				</div>
+
+				<div class="col-12 hov col-md-6">
+					<div class="fig">
+						<h3 class="hidden-md-up">blog</h3>
+						<a href="https://github.com/Mathieu-Pluquet/wp-blog" target="_blank">
+						<img src="img/wp.jpg" alt="site air bnb">
+							<figcaption class="hidden-sm-down"> <span class="span2"><span class="spanstyle">Blog</span> <br>WordPress</span></figcaption>
+							</div>
+				</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- end of projet  -->
+
+
+		<!-- parallax -->
+
+		<div class="container-fluid" id="slide2">
+			<h1>Contact</h1>
+		</div>
+
+		<!-- start of contact  -->
+		<div class="color">
+			<div class="contact">
+
+
+				<div>
+					<p class="p1">Contactez moi pour toutes demandes de stage ou autres</p>
+					<a class="reseau lettre" href="mailto:mathieu.pluquet@laposte.net"><i class="fa fa-envelope-o fa" aria-hidden="true"> message</i></a>
+					<p class="p2">Si vous voulez en savoir plus sur moi,</p>
+					<p>Vous pouvez aller regarder mon LinkedIn ou aller voir mon Github ainsi que mon Twitter</p>
+				</div>
+
+				<div class="reseaux">
+					<a class="reseau" href="https://www.linkedin.com/in/mathieu-pluquet-771687152/" target="_blank">LinkedIn</a>
+					<a class="reseau bot" href="https://github.com/Mathieu-Pluquet" target="_blank">Github</a>
+					<a class="reseau top" href="https://twitter.com/Mathieu_Pluquet?lang=fr" target="_blank">Twitter</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- end of contact  -->
+<script>
+
+</script>
+
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 
 </html>
